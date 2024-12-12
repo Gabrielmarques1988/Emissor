@@ -6,7 +6,7 @@ pipeline {
         stage('Verificar Repositório') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/main']],
-                          userRemoteConfigs: [[url: 'https://github.com/Gabrielmarques1988/ProvaEmissor.git']]])
+                          userRemoteConfigs: [[url: 'https://github.com/Gabrielmarques1988/Emissor.git']]])
             }
         }
 
